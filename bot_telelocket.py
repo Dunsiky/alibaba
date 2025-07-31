@@ -80,10 +80,7 @@ def proxylist(update, context):
     if not proxies:
         update.message.reply_text("proxy.txt rỗng hoặc lỗi!")
     else:
-        reply = "Danh sách proxy hiện tại:\n"
-        for i, p in enumerate(proxies):
-            reply += f"{i+1}. {p}\n"
-        update.message.reply_text(reply)
+        update.message.reply_text(f"Đã nạp {len(proxies)} proxy, không hiển thị chi tiết!")
 
 def main():
     updater = Updater(TOKEN, use_context=True)
