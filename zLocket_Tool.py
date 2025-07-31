@@ -1,7 +1,7 @@
 import requests
 
 class zLocket:
-    API_LOCKET_URL = "https://api.locket.com/v1"  # Sửa URL này lại nếu bạn dùng endpoint khác!
+    API_LOCKET_URL = "https://api.zprojectx.click/api/locket/token"  # Sửa URL này lại nếu bạn dùng endpoint khác!
 
     def __init__(self, target_friend_uid=None):
         self.target_friend_uid = target_friend_uid
